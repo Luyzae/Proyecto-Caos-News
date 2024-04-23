@@ -1,0 +1,141 @@
+/*Css*/
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .navPrincipal .navbar {
+    background-color: white; /* Fondo blanco para la barra de navegación */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para hacer una linea */
+  }
+
+  .navPrincipal .navbar-brand {
+    font-size: 24px; /* Tamaño del logo y nombre del sitio */
+    color: #0056b3; /* letra color azul */
+    font-weight: bold; /* Nombre del sitio en negrita */
+  }
+
+  .navPrincipal .navbar-nav .nav-link {
+    font-weight: bold; /* Enlaces en negrita */
+  }
+
+  .navPrincipal .navbar-nav .nav-link:hover {
+    color: #0056b3; /*color azul al pasar el mouse por encima */
+  }
+
+  .navPrincipal .navbar-toggler {
+    color: #0056b3;;
+  }
+
+  .navPrincipal .status-indicator {
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+  }
+
+  .navPrincipal .dropdown-menu {
+    min-width: 60px;  /* Ajustar el ancho del menú */
+  }
+
+  .navPrincipal .dropdown-item {
+      color: #0056b3; /* Color de texto azul*/
+      font-size: 16px; 
+      font-weight: bold;
+  }
+
+  .navPrincipal .dropdown-item:hover {
+      color: #ffffff; /* Color blanco a las letras al pasar el mouse  */
+      background-color: #0056b3; /* Fondo azul al pasar el mouse por encima */
+  }
+
+  .noticiaGeneral p {
+    margin-bottom: 2.1em; /* Espacio debajo de cada párrafo para separación */
+    color: #666; /* Gris claro para el texto */
+    line-height: 1.2; /* Espacio entre líneas para mejorar la legibilidad */
+    font-size: 20px;
+  }
+
+
+  .noticiaGeneral h1, .noticiaGeneral h2 {
+    color: #0056b3; 
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .noticiaGeneral .separacion{
+    margin-top: 20px;
+  }
+
+
+  .sobreNosotros p {
+    line-height: 1.6; 
+  }
+
+  .footer {
+    background-color: #343a40; 
+    padding: 20px 0;
+  }
+
+  .footer h5 {
+    color: white; 
+    margin-bottom: 20px;
+  }
+
+  .footer p, .footer a {
+    color: #dddddd; 
+    font-size: 15px; 
+  }
+
+  .footer a:hover {
+    text-decoration: none;
+  }
+
+
+  @media (max-width: 576px) {
+    .navPrincipal .navbar-collapse {
+      text-align: center;
+    }
+    .navPrincipal .navbar .navbar-nav:last-child .nav-link{
+        margin-top: 5px;
+    }
+
+    .navPrincipal .dropdown-menu {
+      text-align: center; 
+    }
+
+    .noticiaGeneral .carousel-item img{
+
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+    }
+
+
+    .footer{
+      text-align: center;
+   }
+  }
+
+  @media (max-width: 768px) {
+    
+    .navPrincipal .navbar-collapse {
+      text-align: center;
+    }
+    .navPrincipal .navbar .navbar-nav:last-child .nav-link{
+        margin-top: 5px;
+    }
+
+    .navPrincipal .dropdown-menu {
+      text-align: center; 
+    }
+  }
+
+  

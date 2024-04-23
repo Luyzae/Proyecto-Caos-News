@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Caos News - Principal </title>
+
+    <!-- Boostrap Css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <!-- Css Personalizado-->
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>  
+     <header>
+        <!-- Todo navPrincipal es basicamente un contenedor donde estara todo el nav, el nombre de esta clase es creada por mi, para matener un orden dentro del html y css -->
+        <div class="navPrincipal">
+            <!-- Todo Usamos etiqueda nav, indidicando que todo lo que esta dentro de esta etiqueda sera parte del nav -->
+            <!-- Todo Se usa la clase navbar que es parte del boostrap para formar el nav -->
+            <!-- Todo Tenemos la clase navbar-expand-lg, que es una clase para que el nav se expanda en pantallas grandes y se achique en pantallas pequeñas-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <!-- Todo Utilizamos la clase container-fluid para utilizar todo el ancho disponible de la pantalla-->
+                <div class="container-fluid">
+                    <!-- Todo Usamos la etiqueda a para hacer un enlace con el logo y titulo-->
+                    <!-- Todo Aqui utilizamos la clase de boostrap navbar-brand que basicamente da un diseño para este enlace-->
+                    <!-- Todo Por ejemplo eliminar la linea que aparece abajo de un enlace con etiqueda a, el color, etc-->
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./assets/img/logo.png" alt="logo" style="height: 70px;">
+                        Caos News
+                    </a>
+                    <!-- Todo Lo que hacemos aqui es crear el botton hambuergesa para los telefonos-->
+                    <!-- Todo La clase navbar-toggler es para que muestre el botton cuando esta en modo telefono-->
+                    <!-- Todo data-bs-toggle="collapse" indica que mostrara o ocultara los elementos mediante un efecto de desplege -->
+                    <!-- Todo data-bs-target y aria-controls, son los necesario para que lea y muestre lo que hay dentro del menu-->
+                    <!-- Todo aria-expanded="false" indica que el estado del contenido desplegado, es decir que se mostrarla al menos que se le indique-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+                    <!-- Todo Este div contiene todos los elementos que se mostraran en el botton de hamburguesa cuando este en modo telefono-->
+                    <!-- Todo collapse, se asegura que se pueda desplegar-->
+                    <!-- Todo navbar-collapse indica que los elementos son parte de una barra que se despliega -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                        <!-- Todo Esto define una lista de navegacion por cada item representado por li class="nav-item"-->
+                        <!-- Todo nav-link sirve para eliminar lo default de un link normal por la etiqueta a, esto es parte de boostrap-->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="noticia-general.html">Noticias</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <!-- Todo Aqui tenemos otra lista de navar-->
+                        <ul class="navbar-nav">
+                            <!-- Todo nav-item dropdown esta diciendo que lo elementos dentro de esta clase seran de forma de menu desplegable-->
+                            <li class="nav-item dropdown">
+                                <!-- Todo Enlace que sirve para menu desplegable, las clases dropdown-toggle y data-bs-toggle="dropdown" indican y activan la funcionalidad desplegable-->
+                                <!-- Todo nav-link como ya puse arriba es para elimiar lo default de un link normal, haciendo que, "Cuenta", no se vea como un link-->
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <!-- Todo Esto es utilizado para indicar que el usuario esta logeado o no, mediante JS -->
+                                    <span id="loginEstado" class="status-indicator"></span> Cuenta
+                                </a>
+                                <!-- Todo lista desplegable que mostrara iniciar sesion y registrar-->
+                                <!-- Todo dropdown-menu eliminara lo default de una lista por la etiqueta ul-->
+                                <!-- Todo dropdown-menu-end hara que el menu se muestre a un lado de la pantalla-->
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="./login.html">Iniciar Sesión</a></li>
+                                    <li><a class="dropdown-item" href="./registrar.html">Registrar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="carruselPrincipal">
+        <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/Escuela.jpg"  class="d-block img-fluid" alt="Noticia Destacada 1">
+                    <div class="carousel-caption">
+                    <h5><a href="noticia-detalle.html" class="text-white text-decoration-none">Región de Atacama: suspenden clases en 59 recintos educacionales</a></h5>
+                    <p>La región de Atacama fue una de las más afectadas por el evento meteorológico registrado en la zona norte del país.</p>
+                    <a href="noticia-detalle.html" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="./assets/img/futbol.webp"  class="d-block img-fluid" alt="Noticia Destacada 1">
+                    <div class="carousel-caption">
+                    <h5><a href="noticia-detalle.html" class="text-white text-decoration-none">Los narcotraficantes que amenazan a Di María hacen que cambie sus planes de futuro</a></h5>
+                    <p>"La decisión está tomada"</p>
+                    <a href="noticia-detalle.html" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="./assets/img/mundo.avif"  class="d-block img-fluid" alt="Noticia Destacada 1">
+                    <div class="carousel-caption">
+                    <h5><a href="noticia-detalle.html" class="text-white text-decoration-none">Israel repelió el enorme ataque de Irán, pero sólo con la ayuda de Estados Unidos y socios árabes</a></h5>
+                    <p>Trabajando con socios, defendió los peores ataques iraníes; Lo que viene a continuación pondrá a prueba las potencias en Medio Oriente y más allá.</p>
+                    <a href="noticia-detalle.html" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+      <div class="container mt-4 noticiasRecientes">
+        <h2 class="text-center mb-3">Noticias Recientes</h2>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="./assets/img/noticia1.jpg" class="card-img-top" alt="Imagen Noticia 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Cuenta RUT: ¿Cuánto es el máximo que puedo recibir en una transferencia?</h5>
+                        <p class="card-text"></p>
+                        <a href="noticia-detalle.html" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="./assets/img/noticia2.jpg" class="card-img-top" alt="Imagen Noticia 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Minsal reporta 135 casos de dengue y aclara que "todos los casos en Chile continental son importados"</h5>
+                        <p class="card-text"></p>
+                        <a href="noticia-detalle.html" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="./assets/img/noticia3.jpg" class="card-img-top" alt="Imagen Noticia 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Chubascos en Santiago: Alejandro Sepúlveda anticipa el día con probabilidad de precipitaciones en la capital</h5>
+                        <p class="card-text"></p>
+                        <a href="noticia-detalle.html" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4 sobreNosotros">
+        <h2 class="text-center mb-3">Sobre Nosotros</h2>
+        <p class="textoSobreN">
+            Caos News es un grupo de jóvenes estudiantes de periodismo y comunicación audiovisual,
+            dedicado a ofrecer perspectivas frescas y profundas en las noticias de Chile y el mundo.
+            Nos esforzamos por traer un enfoque crítico y alternativo frente a los medios tradicionales.
+        </p>
+        <div class="row mt-4">
+            <div class="col-md-4 text-center">
+                <img src="./assets/img/miembro.png" class="img-fluid rounded-circle mb-2" alt="Miembro 1">
+                <h5>Juan Pérez</h5>
+                <p>Editor Jefe</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="./assets/img/miembro.png" class="img-fluid rounded-circle mb-2" alt="Miembro 2">
+                <h5>Maria López</h5>
+                <p>Directora de Fotografía</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="./assets/img/miembro.png" class="img-fluid rounded-circle mb-2" alt="Miembro 3">
+                <h5>Carlos González</h5>
+                <p>Reportero Jefe</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-dark text-white mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre Nosotros</h5>
+                    <p>Caos News es un grupo de jóvenes periodistas dedicado a ofrecer perspectivas frescas y profundas en las noticias de Chile y el mundo.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Inicio</a></li>
+                        <li><a href="#" class="text-white">Noticias</a></li>
+                        <li><a href="#" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>Puedes encontrarnos en:</p>
+                    <p>Email: CaosNew@gmail.com</p>
+                    <p>Teléfono: +56 9 87654321</p>
+                </div>
+            </div>
+            <div class="text-center py-3">
+                <p>© 2024 Caos News, Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Boostrap bundle Js -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./assets/js/loginEstado.js"></script>
+
+
+</body>
+</html>

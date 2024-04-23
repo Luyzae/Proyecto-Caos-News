@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Caos News - Noticia Detalle </title>
+
+    <!-- Boostrap Css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <!-- Css Personalizado-->
+    <link rel="stylesheet" href="./assets/css/noticia-detalle.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="navPrincipal">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+                <!-- Logo y nombre del sitio -->
+                <a class="navbar-brand" href="index.html">
+                <img src="./assets/img/logo.png" alt="logo" style="height: 70px;">
+                Caos News
+                </a>
+                <!-- Botón para versión móvil -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Elementos del menú -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="noticia-general.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span id="loginEstado" class="status-indicator"></span> Cuenta
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="container mt-4 noticiaGeneral">
+            <h1>Suspenden clases en comunas de la región de Atacama por precipitaciones que afectaron a la zona</h1>
+            <p class="separacion">La región de Atacama fue una de las más afectadas por el evento meteorológico registrado en la zona norte del país.</p>
+            <img src="./assets/img/Escuela.jpg" alt="Imagen Principal de la Noticia" class="img-fluid">
+            <p class="meta">Escrito por <strong>Juan Perez</strong> el <time datetime="2024-04-15">15 de abril de 2024</time></p>
+            <div class="text-content">
+                <p>Durante esta jornada se informó sobre la suspensión de clases para este lunes en 59 establecimientos educacionales de la región de Atacama.</p>
+                <p>Así lo confirmó el Ministerio de Educación a través de un comunicado, donde señalaron que esto se debe a las precipitaciones que afectaron a la zona.</p>
+                <p>"Con motivo de las precipitaciones que afectaron a la región de Atacama comunicamos la suspensión de clases en la totalidad de los establecimientos educacionales de la comuna de Alto del Carmen", comienza indicando el comunicado.</p>
+                <p>Cabe recordar que la comuna de Alto del Carmen resultó fuertemente dañada por el sistema frontal registrado en la zona norte, donde se reportaron más de cien familias aisladas producto del deslizamiento de quebradas que cortó caminos hacia cuatro localidades. Los sectores afectados fueron Albaricoque, El Corral, Malaguin y Juntas de Valeriano.</p>
+                <p>“Tenemos reporte de ellos de que están bien, tienen suministro de luz y agua potable”, sostuvo el alcalde Cristian Olivares a Canal 24 Horas.</p>
+                <h2>Suspensión de clases en otras comunas de la región</h2>
+                <p class="separacion">Desde el ministerio además informaron sobre la suspensión de clases en otras comunas que se vieron afectadas.</p>
+                <p>"Existirá suspensión de clases en 44 establecimientos educacionales de las siguientes comunas de la región: Caldera, Chañaral, Copiapó, Diego de Almagro, Huasco y Tierra Amarilla", puntualizaron.</p>
+                <p>"En total, se suspenden las clases en 59 establecimientos educacionales de la región", confirmaron.</p>
+            </div>
+            <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/noticia1/1.png" class="d-block w-300" alt="Imagen Descriptiva 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/noticia1/2.png" class="d-block w-300" alt="Imagen Descriptiva 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/noticia1/3.png" class="d-block w-300" alt="Imagen Descriptiva 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/noticia1/4.png" class="d-block w-300" alt="Imagen Descriptiva 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+            <div class="text-content">
+                <h2>Albergues</h2>
+                <p class="separacion">En el comunicado se informa que "las autoridades regionales han dispuesto la ocupación de dos establecimientos educacionales como albergue. En cada uno de ellos, Junaeb entrega servicio de alimentación de emergencia".</p>
+                <p>"Los centros educativos que se utilizarán con este fin son la Escuela Ricardo Campillay Contreras y el Liceo Bicentenario Alto del Carmen, ambos ubicados en la comuna de Alto del Carmen", finalizaron.</p>
+            </div>
+    </div>
+
+
+    <footer class="footer bg-dark text-white mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre Nosotros</h5>
+                    <p>Caos News es un colectivo de jóvenes periodistas dedicado a ofrecer perspectivas frescas y profundas en las noticias de Chile y el mundo.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Inicio</a></li>
+                        <li><a href="#" class="text-white">Noticias</a></li>
+                        <li><a href="#" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>Puedes encontrarnos en:</p>
+                    <p>Email: CaosNew@gmail.com</p>
+                    <p>Teléfono: +56 9 87654321</p>
+                </div>
+            </div>
+            <div class="text-center py-3">
+                <p>© 2024 Caos News, Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Boostrap bundle Js -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./assets/js/loginEstado.js"></script>
+
+    <script src="./assets/js/loginRegistro.js"></script>
+
+    <script>
+        if (!localStorage.getItem("isLoggedIn")) {
+            window.location.href = "login.html"; 
+        }
+    </script>
+
+</body>
+</html>

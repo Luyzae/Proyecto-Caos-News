@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Caos News - Registrar </title>
+
+    <!-- Boostrap Css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <!-- Css Personalizado-->
+    <link rel="stylesheet" href="./assets/css/registrar.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <div class="text-center mb-4">
+            <img src="./assets/img/logo.png" alt="Logo de Caos News" style="width: 120px;"> 
+            <h2>Caos News - Registrar</h2>
+        </div>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="reg-name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="reg-email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="reg-password" required>
+            </div>
+            <div class="mb-3">
+                <button type="button" class="btn btn-primary" onclick="registrarUsuario()">Registrar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Boostrap Js -->
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/loginRegistro.js"></script>
+
+
+</body>
+</html>

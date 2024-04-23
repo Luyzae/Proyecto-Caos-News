@@ -1,0 +1,259 @@
+/*Css*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .navPrincipal .navbar {
+    background-color: white; /* Fondo blanco para la barra de navegación */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para hacer una linea */
+  }
+  
+  .navPrincipal .navbar-brand {
+    font-size: 24px; /* Tamaño del logo y nombre del sitio */
+    color: #0056b3; /* letra color azul */
+    font-weight: bold; /* Nombre del sitio en negrita */
+  }
+  
+  .navPrincipal .navbar-nav .nav-link {
+    font-weight: bold; /* Enlaces en negrita */
+  }
+  
+  .navPrincipal .navbar-nav .nav-link:hover {
+    color: #0056b3; /*color azul al pasar el mouse por encima */
+  }
+  
+  .navPrincipal .navbar-toggler {
+    color: #0056b3;;
+  }
+
+  .navPrincipal .status-indicator {
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+  }
+
+  .navPrincipal .dropdown-menu {
+    min-width: 60px;  /* Ajustar el ancho del menú */
+  }
+
+  .navPrincipal .dropdown-item {
+      color: #0056b3; /* Color de texto azul*/
+      font-size: 16px; 
+      font-weight: bold;
+  }
+
+  .navPrincipal .dropdown-item:hover {
+      color: #ffffff; /* Color blanco a las letras al pasar el mouse  */
+      background-color: #0056b3; /* Fondo azul al pasar el mouse por encima */
+  }
+
+  .carruselPrincipal .carousel-item {
+    margin-top: 20px;
+    height: 700px; /* altura de las imagenes */
+    width: 100%;
+  }
+  
+  .carruselPrincipal .carousel-item img {
+    width: 100%; /* la imagen ocupa todo el ancho */
+    height: 100%; /* la imagen ocupa toda la altura */
+    object-fit: cover; /* hace que la imagen se vea bien, no se alarga demas, ni se achica demas */
+  }
+
+
+  .carruselPrincipal .carousel-caption .btn-primary {
+    background-color: #0056b3; 
+    border: none; 
+    border-radius: 25px; /* Bordes redondos */
+    padding: 10px 20px; /* agrandamos el espacio que hay dentro */
+    font-size: 16px; 
+  }
+
+  .carruselPrincipal .carousel-caption .btn-primary:hover {
+    background-color: #004494; /* Un azul mas oscuro que el otro, haciendo que al pasar el mouse se vea bien */
+  }
+
+  .carruselPrincipal .carousel-caption h5 {
+    font-size: 24px; 
+    color: #ffffff; 
+  
+  }
+
+  .carruselPrincipal .carousel-caption p {
+    font-size: 16px; 
+    color: #ffffff; 
+  }
+  
+  .noticiasRecientes .card {
+    margin-top: 20px;
+    height: 100%; 
+  }
+  
+  .noticiasRecientes .card-img-top {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+  }
+  
+  .noticiasRecientes .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .noticiasRecientes .card-title {
+    color: #0056b3; 
+  }
+  
+  .noticiasRecientes .btn-primary {
+    background-color: #0056b3;
+  }
+  
+  .noticiasRecientes .btn-primary:hover {
+    background-color: #004494;
+  }
+  
+  .sobreNosotros{
+    margin-top: 150px !important;
+  }
+
+  .sobreNosotros .textoSobreN {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .sobreNosotros .img-fluid {
+    max-width: 150px; 
+    height: 140px;
+    border: 3px solid #0056b3; 
+  }
+
+  .sobreNosotros h5, h2 {
+    color: #0056b3; 
+  }
+
+  .sobreNosotros p {
+    line-height: 1.6; 
+  }
+
+  .footer {
+    background-color: #343a40; 
+    padding: 20px 0;
+  }
+
+  .footer h5 {
+    color: white; 
+    margin-bottom: 20px;
+  }
+
+  .footer p, .footer a {
+    color: #dddddd; 
+    font-size: 15px; 
+  }
+
+  .footer a:hover {
+    text-decoration: none;
+  }
+  
+
+  @media (max-width: 576px) {
+
+    .navPrincipal .navbar-collapse {
+      text-align: center;
+    }
+    .navPrincipal .dropdown-menu {
+      text-align: center;
+    }
+    
+    .carruselPrincipal .carousel-caption {
+      min-height: 50vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .carruselPrincipal .carousel-item img {
+      height: 250px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .carruselPrincipal .carousel-caption .btn-primary, .carousel-caption p {
+      display: none;
+    }
+
+    .noticiasRecientes .col-md-4 {
+      padding: 0 50px; /* Ajusta el padding a los lados de cada tarjeta para reducir su anchura */
+    }
+  
+    .noticiasRecientes .card-img-top {
+      height: 130px; /* Reduce la altura de las imagenes */
+    }
+
+    .noticiasRecientes .card-body {
+      padding: 20px; /* Reducir el padding del cuerpo de la tarjeta para ahorrar espacio */
+    }
+
+    .noticiasRecientes .card-title {
+      font-size: 18px; /* Reducir el tamaño de la fuente para los títulos en móviles */
+    }
+
+    .noticiasRecientes .btn-primary {
+      padding: 6px 12px; /* Reducir el tamaño del botón */
+      font-size: 14px; /* Reducir el tamaño de la fuente del botón */
+    }
+
+    .footer{
+      text-align: center;
+    }
+  
+  }
+
+  @media (max-width: 768px) {
+    .navPrincipal .navbar-collapse {
+      text-align: center;
+    }
+
+    .navPrincipal .dropdown-menu {
+      text-align: center;
+    }
+
+    .carruselPrincipal .carousel-caption {
+      padding: 10px; /* Aumenta el padding para mayor claridad */
+      bottom: 10px; /* Ajusta la posición hacia abajo */
+      font-size: 12px; /* Reduce el tamaño de la fuente general para todo el texto del caption */
+    }
+  
+    .carruselPrincipal .carousel-caption h5 {
+      font-size: 18px; /* Tamaño de fuente reducido para el título */
+    }
+  
+    .carruselPrincipal .carousel-caption p {
+      font-size: 12px; /* Tamaño de fuente reducido para el subtítulo */
+    }
+  
+    .carruselPrincipal .carousel-caption .btn-primary {
+      font-size: 12px; /* Reduce el tamaño de fuente del botón */
+      padding: 5px 10px; /* Reduce el padding del botón */
+    }
+  
+    .carruselPrincipal .carousel-item {
+      height: 350px; /* Ajusta la altura del carrusel */
+    }
+
+    .noticiasRecientes .card-img-top {
+      height: 150px; /* Reducir la altura de las imágenes en tablets */
+    }
+    
+  }
+
+
+  
+  

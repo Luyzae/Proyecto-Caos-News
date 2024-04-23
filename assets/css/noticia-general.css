@@ -1,0 +1,184 @@
+/* CSS */
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .navPrincipal .navbar {
+    background-color: white; /* Fondo blanco para la barra de navegación */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para hacer una linea */
+  }
+
+  .navPrincipal .navbar-brand {
+    font-size: 24px; /* Tamaño del logo y nombre del sitio */
+    color: #0056b3; /* letra color azul */
+    font-weight: bold; /* Nombre del sitio en negrita */
+  }
+
+  .navPrincipal .navbar-nav .nav-link {
+    font-weight: bold; /* Enlaces en negrita */
+  }
+
+  .navPrincipal .navbar-nav .nav-link:hover {
+    color: #0056b3; /*color azul al pasar el mouse por encima */
+  }
+
+  .navPrincipal .navbar-toggler {
+    color: #0056b3;;
+  }
+
+  .navPrincipal .status-indicator {
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+  }
+
+  .navPrincipal .dropdown-menu {
+    min-width: 60px;  /* Ajustar el ancho del menú */
+  }
+
+  .navPrincipal .dropdown-item {
+      color: #0056b3; /* Color de texto azul*/
+      font-size: 16px; 
+      font-weight: bold;
+  }
+
+  .navPrincipal .dropdown-item:hover {
+      color: #ffffff; /* Color blanco a las letras al pasar el mouse  */
+      background-color: #0056b3; /* Fondo azul al pasar el mouse por encima */
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+
+  .card {
+    height: 400px; /* altura de las cards */
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .card-img-top {
+    width: 100%; /* Asegurar que la imagen cubra todo el ancho de la card */
+    height: 200px; /* Altura para todas las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin que se ponga ancho demas o que tenga mas altura */
+  }
+
+  .card-title {
+    color: #0056b3; 
+    margin-bottom: 15px; /* Espacio debajo del título */
+  }
+
+ .card-text {
+    color: #333; /* Color del texto de la descripción */
+
+  }
+
+  .btn-primary {
+    background-color: #0056b3; /* Fondo del botón azul*/
+  }
+
+  .btn-primary:hover {
+    background-color: #004494; /* Color del botón al pasar el mouse */
+  }
+
+
+  .footer {
+    background-color: #343a40; 
+    padding: 20px 0;
+  }
+
+  .footer h5 {
+    color: white; 
+    margin-bottom: 20px;
+  }
+
+  .footer p, .footer a {
+    color: #dddddd; 
+    font-size: 15px; 
+  }
+
+  .footer a:hover {
+    text-decoration: none;
+  }
+
+
+  @media (max-width: 576px) {
+
+        .navPrincipal .navbar-collapse {
+          text-align: center;
+        }
+
+        .navPrincipal .dropdown-menu {
+          text-align: center;
+        }
+
+        .card-img-top {
+            height: 150px; /* Altura más pequeña para las imágenes en telefonos */
+        }
+
+        .card {
+          min-height: 10vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+        }
+
+        .footer{
+          text-align: center;
+        }
+      
+        .footer p, .footer a {
+          color: #dddddd; /* Un color gris claro para texto y enlaces */
+          font-size: 0.9rem; /* Un tamaño de fuente más pequeño para el texto */
+        }
+      
+        .footer a:hover {
+          color: #ffffff; /* Blanco para el hover de los enlaces */
+          text-decoration: none; /* No subrayar al hacer hover */
+        }
+  }
+
+  @media (max-width: 768px) {
+    
+        .navPrincipal .navbar-collapse {
+          text-align: center;
+        }
+        .navPrincipal .dropdown-menu {
+          text-align: center;
+        }
+
+        .card-img-top {
+          height: 150px; /* Altura más pequeña para las imágenes en telefonos */
+        }
+
+        .card {
+          height: 345px; /* altura de las cards */
+        }
+
+
+        .card h5{
+
+          font-size: 15px;
+
+        }
+      
+
+        .footer{
+          text-align: center;
+        }
+      
+ }
+
